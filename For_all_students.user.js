@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         For_all_students
-// @namespace    http://tampermonkey.net/
-// @version      0.2
+// @namespace    https://github.com/SergeyZaykov/VKR_GEK
+// @version      0.4
 // @description  Назначает комиссию всей группе
 // @author       Сергей Зайков
 // @match        https://nagruzka.tsu.tula.ru:6443/nagruzka/TeacherLoad/JSPForms/MainTeacherForm.jsp
 // @icon         https://www.google.com/s2/favicons?domain=tulsu.ru
-// @updateURL    https://github.com/SergeyZaykov/VKR_GEK
+// @updateURL    https://github.com/SergeyZaykov/VKR_GEK/raw/main/For_all_students.user.js
 // @grant        none
 // @require      https://gist.github.com/raw/2625891/waitForKeyElements.js
 // ==/UserScript==
