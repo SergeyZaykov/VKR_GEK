@@ -1,13 +1,14 @@
 // ==UserScript==
 // @name         For_all_students
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Назначает комиссию всей группе
-// @author       You
-// @match        https://up.tsu.tula.ru:6443/nagruzka/TeacherLoad/JSPForms/MainTeacherForm.jsp
-// @icon         https://www.google.com/s2/favicons?domain=tula.ru
+// @author       Сергей Зайков
+// @match        https://nagruzka.tsu.tula.ru:6443/nagruzka/TeacherLoad/JSPForms/MainTeacherForm.jsp
+// @icon         https://www.google.com/s2/favicons?domain=tulsu.ru
+// @updateURL    https://github.com/SergeyZaykov/VKR_GEK
 // @grant        none
-// @require https://gist.github.com/raw/2625891/waitForKeyElements.js
+// @require      https://gist.github.com/raw/2625891/waitForKeyElements.js
 // ==/UserScript==
 
 function set_committee(mutations, observer) {
@@ -49,7 +50,7 @@ function set_committee(mutations, observer) {
                     // ГЭК
                     formData.set("EX_COM_UUID", document.getElementById("idWETKomisID").value);
                     // сохранить изменения
-                    fetch('https://up.tsu.tula.ru:6443/nagruzka/ThemeTblJR',
+                    fetch('https://nagruzka.tsu.tula.ru:6443/nagruzka/ThemeTblJR',
                           {method: 'POST',
                            body: formData
                           }
